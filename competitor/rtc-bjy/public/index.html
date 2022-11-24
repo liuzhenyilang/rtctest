@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="https://docs.baijiayun.com/statics/images/favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script>
+      window.brtcSdkEnv = "<%= htmlWebpackPlugin.options.sdkEnv %>"
+    </script>
+    <script src="https://brtc.baijiayun.com/blive-js-sdk/0.0.6/BLive.js"></script>
+    <script src="https://live-cdn.baijiayun.com/js-sdk/tool/bplayer/3.1.2/ffplayer.js"></script>
+  </body>
+</html>
